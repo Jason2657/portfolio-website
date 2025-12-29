@@ -1,32 +1,70 @@
 // app/page.tsx
+import Link from "next/link";
+import { Github, Linkedin } from "lucide-react";
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div className="p-8 max-w-4xl mx-auto">
-      <div className="flex items-center justify-between">
+    <div className="p-6 md:p-8 max-w-4xl mx-auto min-h-[calc(100vh-200px)] flex items-center">
+      <div className="flex items-center justify-between gap-4 md:gap-8 w-full">
         
         {/* Left Column */}
-        <div>
-          <h1 className="text-5xl font-bold text-gray-900">
+        <div className="max-w-xl">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
             Hey, I'm Jason!
           </h1>
-          <p className="text-xl text-gray-600 mt-4">
-            I'm a software engineer and CS student at Columbia.
-          </p>
+          <div className="mt-2 md:mt-4 space-y-3">
+            <p className="text-base md:text-xl text-gray-600">
+              I'm a Computer Science and Psychology major at Columbia University. I love solving complex problems and building products that combine technical depth with deep user understanding.
+            </p>
+            <p className="text-base md:text-xl text-gray-600">
+              Previously, I've worked as a Software Engineer at Arlo, a GTM Engineer at Instalily, and conducted research in computational biology.
+            </p>
+          </div>
 
           {/* Buttons */}
-          <div className="flex gap-4 mt-6">
-            <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+          <div className="flex gap-2 md:gap-4 mt-4 md:mt-6">
+            <Link 
+              href="/projects"
+              className="px-4 md:px-6 py-2 md:py-3 bg-blue-500 text-white text-sm md:text-base rounded-lg hover:bg-blue-600 transition"
+            >
               Projects
-            </button>
-            <button className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition">
+            </Link>
+            <Link 
+              href="/resume"
+              className="px-4 md:px-6 py-2 md:py-3 border border-gray-300 text-sm md:text-base rounded-lg hover:bg-gray-100 transition"
+            >
               Resume
-            </button>
+            </Link>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-6">
+            <a 
+              href="https://github.com/Jason2657" 
+              target="_blank"
+              className="text-gray-600 hover:text-gray-900 transition"
+            >
+              <Github size={24} />
+            </a>
+            <a 
+              href="https://linkedin.com/in/jasonagxie" 
+              target="_blank"
+              className="text-gray-600 hover:text-gray-900 transition"
+            >
+              <Linkedin size={24} />
+            </a>
           </div>
         </div>
         
         {/* Right: Emoji */}
-        <div className="text-9xl">
-          👨‍💻
+        <div className="w-40 h-40 md:w-80 md:h-80 relative flex-shrink-0">
+          <Image 
+            src="/memoji.png" 
+            alt="Jason's memoji"
+            fill
+            className="object-contain"
+          />
         </div>
 
       </div>
