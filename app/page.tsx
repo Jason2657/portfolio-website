@@ -18,7 +18,7 @@ export default function Home() {
               I'm a Computer Science and Psychology major at Columbia University. I love solving complex problems and building products that combine technical depth with deep user understanding.
             </p>
             <p className="text-base md:text-xl text-gray-600">
-              Previously, I've worked as a Software Engineer at Arlo, a GTM Engineer at Instalily, and conducted research in computational biology.
+              Previously, I've worked as a Software Engineer at Arlo, a GTM Engineer at Instalily, and conducted research in Computational Biology.
             </p>
           </div>
 
