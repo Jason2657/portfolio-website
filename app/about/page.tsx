@@ -31,7 +31,7 @@ export default function About() {
       <div className="mt-12">
         <h2 className="text-2xl font-bold text-gray-900">Skills</h2>
         <div className="flex flex-wrap gap-2 mt-4">
-          {["Python", "JavaScript", "TypeScript", "React", "Next.js", "Ruby on Rails", "Node.js", "PostgreSQL", "Git", "Tailwind CSS", "HTML/CSS"].map((skill) => (
+          {["Python", "Java", "C/C++", "JavaScript", "TypeScript", "Ruby on Rails", "SQL", "HTML/CSS", "React", "Next.js", "Node.js", "TensorFlow", "PyTorch", "LangChain", "PostgreSQL", "Docker", "GitHub Actions", "GCP", "Linux"].map((skill) => (
             <span 
               key={skill}
               className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
