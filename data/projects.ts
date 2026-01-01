@@ -37,6 +37,13 @@ export type Project = {
       link: "https://devpost.com/software/versa-versatile-evaluation-research-synthesis-assistant"
     },
     {
+      title: "Personal Website",
+      description: "A personal portfolio website built to showcase my projects and learn modern web development fundamentals.",
+      image: "/projects/personal-website.png",
+      tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+      link: "https://github.com/Jason2657/portfolio-website"
+    },
+    {
       title: "Reprobot (YaleHacks 2024)",
       description: "An AI chatbot that interprets everyday health descriptions into precise medical terminology, helping bridge the communication gap between patients and healthcare providers.",
       image: "/projects/reprobot.png",

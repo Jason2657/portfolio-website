@@ -1,6 +1,6 @@
 // components/Navbar.tsx
 import Link from "next/link";
-import { Code, FileText, Mail } from "lucide-react";
+import { User, Code, FileText, Mail } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -13,6 +13,10 @@ export default function Navbar() {
 
       {/* Navigation Links */}
       <div className="flex items-center gap-4 md:gap-6 text-sm md:text-base">
+        <Link href="/about" className="flex items-center gap-1 hover:text-blue-500 transition">
+          <User size={18} /*className="text-blue-500"*/ />
+          About
+        </Link>
         <Link href="/projects" className="flex items-center gap-1 hover:text-blue-500 transition">
           <Code size={18} />
           Projects
