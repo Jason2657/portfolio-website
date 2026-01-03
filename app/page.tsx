@@ -8,7 +8,15 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
-    <div className="p-6 md:p-8 max-w-4xl mx-auto min-h-[calc(100vh-200px)] flex items-center">
+    <div className="p-6 md:p-8 max-w-4xl mx-auto min-h-[calc(100vh-200px)] flex items-center relative">
+  
+      {/* Decorative Squares */}
+      {/*<div className="hidden md:block absolute top-24 -left-4 w-12 h-12 bg-blue-500 rounded-sm opacity-80" />*/}
+      <div className="hidden md:block absolute bottom-40 -left-6 w-8 h-8 bg-emerald-500 rounded-sm opacity-80" />
+      <div className="hidden md:block absolute top-32 -right-4 w-10 h-10 bg-purple-500 rounded-sm opacity-80" />
+      <div className="hidden md:block absolute bottom-24 -right-2 w-6 h-6 bg-blue-500 rounded-sm opacity-80" />
+      <div className="hidden md:block absolute top-[55%] left-[58%] w-8 h-8 bg-amber-500 rounded-sm opacity-80" />
+
       <div className="flex items-center justify-between gap-4 md:gap-8 w-full">
 
         {/* Left Column */}
