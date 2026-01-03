@@ -19,7 +19,7 @@ export default function About() {
           <h1 className="text-4xl font-bold text-gray-900">About Me</h1>
           <p className="text-gray-600 mt-4 leading-relaxed">
             I'm Jason, a senior at Columbia University studying Computer Science and Psychology. 
-            I got into tech because I love building things that people actually use — products 
+            I got into tech because I love building things that people actually use: products 
             that solve real problems and feel intuitive. My psychology background shapes how I 
             think about users: what motivates them, what frustrates them, and how to design 
             experiences that just work.

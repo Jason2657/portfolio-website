@@ -1,17 +1,28 @@
 // app/page.tsx
+"use client";
+
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
     <div className="p-6 md:p-8 max-w-4xl mx-auto min-h-[calc(100vh-200px)] flex items-center">
       <div className="flex items-center justify-between gap-4 md:gap-8 w-full">
-        
+
         {/* Left Column */}
         <div className="max-w-xl">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
-            Hey, I'm Jason!
+            <TypeAnimation
+              sequence={[
+                "Hey, I'm Jason!",
+                3000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={0}
+            />
           </h1>
           <div className="mt-2 md:mt-4 space-y-3">
             <p className="text-base md:text-xl text-gray-600">
@@ -24,13 +35,13 @@ export default function Home() {
 
           {/* Buttons */}
           <div className="flex gap-2 md:gap-4 mt-4 md:mt-6">
-            <Link 
+            <Link
               href="/projects"
               className="px-4 md:px-6 py-2 md:py-3 bg-blue-500 text-white text-sm md:text-base rounded-lg hover:bg-blue-600 transition"
             >
               Projects
             </Link>
-            <Link 
+            <Link
               href="/resume"
               className="px-4 md:px-6 py-2 md:py-3 border border-gray-300 text-sm md:text-base rounded-lg hover:bg-gray-100 transition"
             >
@@ -40,15 +51,15 @@ export default function Home() {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6">
-            <a 
-              href="https://github.com/Jason2657" 
+            <a
+              href="https://github.com/Jason2657"
               target="_blank"
               className="text-gray-600 hover:text-gray-900 transition"
             >
               <Github size={24} />
             </a>
-            <a 
-              href="https://linkedin.com/in/jasonagxie" 
+            <a
+              href="https://linkedin.com/in/jasonagxie"
               target="_blank"
               className="text-gray-600 hover:text-gray-900 transition"
             >
@@ -56,13 +67,14 @@ export default function Home() {
             </a>
           </div>
         </div>
-        
+
         {/* Right: Emoji */}
         <div className="w-40 h-40 md:w-80 md:h-80 relative flex-shrink-0">
-          <Image 
-            src="/memoji.png" 
+          <Image
+            src="/memoji.png"
             alt="Jason's memoji"
             fill
+            quality={100}
             className="object-contain"
           />
         </div>
