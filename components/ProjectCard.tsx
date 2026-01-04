@@ -8,13 +8,13 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <a 
+    <a
       href={project.link}
       target="_blank"
-      className="group block rounded-xl overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300"
+      className="group block rounded-xl overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 dark:border-gray-700 dark:hover:border-gray-600 dark:hover:shadow-blue-500/20"
     >
       {/* Project Image */}
-      <div className="h-48 bg-gray-100 relative overflow-hidden">
+      <div className="h-48 bg-gray-100 relative overflow-hidden dark:bg-gray-800">
         {project.image ? (
           <Image
             src={project.image}
@@ -31,19 +31,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       {/* Project Info */}
       <div className="p-5">
-        <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-500 transition-colors">
+        <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-500 transition-colors dark:text-white">
           {project.title}
         </h3>
-        <p className="text-gray-600 mt-2 text-sm leading-relaxed">
+        <p className="text-gray-600 mt-2 text-sm leading-relaxed dark:text-gray-300">
           {project.description}
         </p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mt-4">
           {project.tags.map((tag) => (
-            <span 
+            <span
               key={tag}
-              className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+              className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full dark:bg-gray-800 dark:text-gray-300"
             >
               {tag}
             </span>

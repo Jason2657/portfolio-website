@@ -1,4 +1,6 @@
 // components/Navbar.tsx
+"use client";
+
 import Link from "next/link";
 import { User, Code, FileText, Mail } from "lucide-react";
 import ThemeToggle from "./ThemeToogle";
@@ -8,7 +10,7 @@ export default function Navbar() {
     <nav className="w-full max-w-4xl mx-auto flex items-center justify-between p-4 md:p-6">
       
       {/* Logo / Name */}
-      <Link href="/" className="text-lg md:text-xl font-bold">
+      <Link href="/" className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
         Jason Xie
       </Link>
 

@@ -21,7 +21,7 @@ export default function Home() {
 
         {/* Left Column */}
         <div className="max-w-xl">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white">
             <TypeAnimation
               sequence={[
                 "Hey, I'm Jason!",
@@ -33,10 +33,10 @@ export default function Home() {
             />
           </h1>
           <div className="mt-2 md:mt-4 space-y-3">
-            <p className="text-base md:text-xl text-gray-600">
+            <p className="text-base md:text-xl text-gray-600 dark:text-gray-300">
               I'm a Computer Science and Psychology major at Columbia University. I love solving complex problems and building products that combine technical depth with deep user understanding.
             </p>
-            <p className="text-base md:text-xl text-gray-600">
+            <p className="text-base md:text-xl text-gray-600 dark:text-gray-300">
               Previously, I've worked as a Software Engineer at Arlo, a GTM Engineer at Instalily, and conducted research in Computational Biology.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
             </Link>
             <Link
               href="/resume"
-              className="px-4 md:px-6 py-2 md:py-3 border border-gray-300 text-sm md:text-base rounded-lg hover:bg-gray-100 transition"
+              className="px-4 md:px-6 py-2 md:py-3 border border-gray-300 text-sm md:text-base rounded-lg hover:bg-gray-100 transition dark:border-gray-600 dark:hover:bg-gray-800"
             >
               Resume
             </Link>
@@ -62,14 +62,14 @@ export default function Home() {
             <a
               href="https://github.com/Jason2657"
               target="_blank"
-              className="text-gray-600 hover:text-gray-900 transition"
+              className="text-gray-600 hover:text-gray-900 transition dark:text-gray-400 dark:hover:text-white"
             >
               <Github size={24} />
             </a>
             <a
               href="https://linkedin.com/in/jasonagxie"
               target="_blank"
-              className="text-gray-600 hover:text-gray-900 transition"
+              className="text-gray-600 hover:text-gray-900 transition dark:text-gray-400 dark:hover:text-white"
             >
               <Linkedin size={24} />
             </a>
