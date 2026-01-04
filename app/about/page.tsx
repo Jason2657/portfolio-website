@@ -106,15 +106,52 @@ export default function About() {
       {/* Skills */}
       <div className="mt-12">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Skills</h2>
-        <div className="flex flex-wrap gap-2 mt-4">
-          {["Python", "Java", "C/C++", "JavaScript", "TypeScript", "Ruby on Rails", "SQL", "HTML/CSS", "React", "Next.js", "Node.js", "TensorFlow", "PyTorch", "LangChain", "PostgreSQL", "Docker", "GitHub Actions", "GCP", "Linux"].map((skill) => (
-            <span
-              key={skill}
-              className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm dark:bg-gray-800 dark:text-gray-300"
-            >
-              {skill}
-            </span>
-          ))}
+
+        <div className="mt-6 space-y-6">
+          {/* Languages */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Languages</h3>
+            <div className="flex flex-wrap gap-2">
+              {["Python", "TypeScript", "JavaScript", "Java", "C/C++", "Ruby", "SQL", "HTML/CSS"].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm dark:bg-gray-800 dark:text-gray-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Frameworks & Libraries */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Frameworks & Libraries</h3>
+            <div className="flex flex-wrap gap-2">
+              {["React", "Next.js", "Node.js", "Ruby on Rails", "TensorFlow", "PyTorch", "LangChain", "PostgreSQL"].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm dark:bg-gray-800 dark:text-gray-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* DevOps & Cloud */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">DevOps & Cloud</h3>
+            <div className="flex flex-wrap gap-2">
+              {["Docker", "GitHub Actions", "GCP", "Vercel", "Linux"].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm dark:bg-gray-800 dark:text-gray-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
