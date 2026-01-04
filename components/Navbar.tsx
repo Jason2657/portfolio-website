@@ -1,6 +1,7 @@
 // components/Navbar.tsx
 import Link from "next/link";
 import { User, Code, FileText, Mail } from "lucide-react";
+import ThemeToggle from "./ThemeToogle";
 
 export default function Navbar() {
   return (
@@ -29,6 +30,7 @@ export default function Navbar() {
           <Mail size={18} />
           Contact
         </Link>
+        <ThemeToggle />
       </div>
 
     </nav>
