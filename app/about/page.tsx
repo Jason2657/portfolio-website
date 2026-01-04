@@ -24,6 +24,82 @@ export default function About() {
             think about users: what motivates them, what frustrates them, and how to design
             experiences that just work.
           </p>
+          <p className="text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+            When I'm not coding, you'll find me backpacking, doing photography, or playing pickleball.
+          </p>
+        </div>
+      </div>
+
+      {/* Experience */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Experience</h2>
+
+        <div className="mt-6 space-y-8">
+          {/* Arlo */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer Intern @ Arlo (Columbia Build Labs)</h3>
+            <p className="text-gray-500 dark:text-gray-400 text-sm italic mt-1">September 2025 - December 2025</p>
+            <p className="text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+              Building Arlo, an AI leasing platform for affordable housing applications. Designed document verification pipelines using GPT-4 Vision, Supabase PostgreSQL, and React/Next.js that reduced manual validation time by 90% for pilot users.
+            </p>
+            <div className="mt-3">
+              <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-2">Stack:</p>
+              <div className="flex flex-wrap gap-2">
+                {["Azure OpenAI", "GPT-4 Vision", "PostgreSQL", "React", "Next.js", "TypeScript", "Box API"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs dark:bg-gray-800 dark:text-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Instalily */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">GTM Software Engineer Intern @ InstaLily AI</h3>
+            <p className="text-gray-500 dark:text-gray-400 text-sm italic mt-1">May 2025 - August 2025</p>
+            <p className="text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+              Built an AI-assisted sales platform from zero to one for 15 pilot users, cutting new-feature onboarding by 30%. Designed PostgreSQL schemas, optimized LLM-driven queries with LangChain (25% throughput boost), and containerized the full platform on Docker + GCP Cloud Run with 99.9% uptime.
+            </p>
+            <div className="mt-3">
+              <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-2">Stack:</p>
+              <div className="flex flex-wrap gap-2">
+                {["Python", "MCP Server", "Google ADK", "Next.js", "PostgreSQL", "LangChain", "Docker", "GCP Cloud Run", "Firestore"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs dark:bg-gray-800 dark:text-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Shen Lab */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Research Assistant @ Columbia University Irving Medical Center (Shen Lab)</h3>
+            <p className="text-gray-500 dark:text-gray-400 text-sm italic mt-1">May 2024 - August 2024</p>
+            <p className="text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+              Developed machine learning models using TensorFlow and PyTorch to identify genetic mutations. Built data analytics pipelines analyzing large-scale genetic datasets (ClinVar, PrimateAI), boosting predictive accuracy by 20%.
+            </p>
+            <div className="mt-3">
+              <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-2">Stack:</p>
+              <div className="flex flex-wrap gap-2">
+                {["Python", "TensorFlow", "PyTorch", "Docker", "ClinVar", "PrimateAI"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs dark:bg-gray-800 dark:text-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -85,16 +161,6 @@ export default function About() {
           I'm seeking software engineering roles where I can build user-facing products
           at the intersection of technology and human behavior. I thrive in environments
           where I can ship quickly, learn from users, and iterate.
-        </p>
-      </div>
-
-      {/* Outside of Work */}
-      <div className="mt-12">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Outside of Work</h2>
-        <p className="text-gray-600 dark:text-gray-300 mt-4 leading-relaxed">
-          When I'm not coding, you'll find me backpacking, doing photography,
-          and going on sidequests (most recently: pickleball). I love exploring
-          new places and picking up random skills along the way.
         </p>
       </div>
 

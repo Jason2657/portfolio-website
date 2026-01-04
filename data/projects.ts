@@ -13,7 +13,7 @@ export type Project = {
       description: "A modern platform that helps you prepare for the post-quantum world: scan files, analyze URLs, and learn how quantum computing impacts security.",
       image: "/projects/quantumguard.png",
       tags: ["Python", "TypeScript", "Docker", "AWS"],
-      link: "https://github.com/yourusername/project"
+      link: "http://52.15.239.144/"
     },
     {
       title: "Preply: Your Personalized Interview Prep Companion",
