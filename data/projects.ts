@@ -10,8 +10,8 @@ export type Project = {
   export const projects: Project[] = [
     {
       title: "Inside Joke",
-      description: "A humor-first dating app that matches people through what they find funny — not what they look like. Built to test whether shared humor predicts compatibility better than traditional swipe mechanics.",
-      image: "/projects/inside-joke.png",
+      description: "A humor-first dating app that matches people through what they find funny, not what they look like. Built to test whether shared humor predicts compatibility better than traditional swipe mechanics.",
+      image: "/projects/insidejoke.png",
       tags: ["Next.js", "TypeScript", "Consumer AI"],
       link: "#"
     },
