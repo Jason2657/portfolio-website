@@ -37,7 +37,7 @@ export default function Home() {
               I'm a CS + Psychology senior at Columbia. I love solving complex problems and building AI products from zero to one.
             </p>
             <p className="text-base md:text-xl text-gray-600 dark:text-gray-300">
-              Trilingual (EN · DE · 中文), most curious about consumer AI and multi-agent systems, and at my best when I get to combine technical depth with deep user understanding.
+              Trilingual (EN · DE · CN), most curious about consumer AI and multi-agent systems, and at my best when I get to combine technical depth with deep user understanding.
             </p>
           </div>
 
