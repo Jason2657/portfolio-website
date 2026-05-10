@@ -23,7 +23,7 @@ export default function Resume() {
             JASON XIE
           </h2>
           <p className="mt-2 text-sm md:text-base text-gray-600 dark:text-gray-400">
-            New York, NY · jax2001@columbia.edu · linkedin.com/in/jasonagxie · github.com/Jason2657
+            New York, NY · (646) 240-1631 · jax2001@columbia.edu · linkedin.com/in/jasonagxie · github.com/Jason2657
           </p>
         </header>
 
@@ -34,36 +34,60 @@ export default function Resume() {
           </h3>
           <div className="flex justify-between items-baseline flex-wrap gap-x-4">
             <p className="font-semibold text-gray-900 dark:text-white">Columbia University</p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Expected May 2026</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">May 2026</p>
           </div>
           <p className="text-sm text-gray-700 dark:text-gray-300 italic">
-            B.A. Computer Science &amp; Psychology (Double Major)
+            Bachelor of Arts, Computer Science and Psychology (Double Major)
           </p>
-          <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">GPA: 3.76</p>
-          <p className="text-sm text-gray-700 dark:text-gray-300">
-            Honors: Dean&apos;s List, Upsilon Pi Epsilon
-          </p>
+          <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+            <li>
+              GPA: 3.76/4.00 · Honors: Dean&apos;s List (all semesters), Ward H. Dennis Scholarship, Upsilon Pi Epsilon (Honor Society)
+            </li>
+            <li>
+              Relevant Coursework: Data Structures and Algorithms, Computer Systems, Artificial Intelligence, Database Systems
+            </li>
+            <li>
+              Activities: Application Development Initiative (DevFest), Columbia Organization of Rising Entrepreneurs (Almaworks)
+            </li>
+          </ul>
         </section>
 
         {/* Experience */}
         <section className="mb-8">
           <h3 className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-700 dark:text-gray-300 border-b border-gray-300 dark:border-gray-700 pb-1 mb-4">
-            Experience
+            Professional Experience
           </h3>
 
           <div className="mb-5">
             <div className="flex justify-between items-baseline flex-wrap gap-x-4">
               <p className="font-semibold text-gray-900 dark:text-white">
-                Software Engineer Intern · Arlo (Columbia Build Labs)
+                AI Engineer Intern · Onki AI
               </p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">Sept 2025 – Dec 2025</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">January 2026 – Present</p>
             </div>
             <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
               <li>
-                Built an AI leasing platform for affordable housing applications using Azure OpenAI vision agents, Supabase PostgreSQL backend, and React/Next.js frontend, reducing manual validation time by 90% for pilot users.
+                Building an AI-powered in-store sales assistant combining voice, computer vision, and touchscreen interfaces to deliver real-time product recommendations in retail; deployed to 3 pilot locations across high-margin categories.
               </li>
               <li>
-                Designed AI document verification pipelines leveraging GPT-4 Vision and optimized full-stack architecture (PostgreSQL schemas, Box API, TypeScript dashboards) to automate ID/income workflows.
+                Designed evaluation frameworks benchmarking agent performance across 500+ test conversations; iterated on LLM architecture, prompt strategies, and edge-deployment pipelines to improve recommendation accuracy by 35%.
+              </li>
+            </ul>
+          </div>
+
+          <div className="mb-5">
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4">
+              <p className="font-semibold text-gray-900 dark:text-white">
+                Software Engineer Intern · Columbia Build Labs – Arlo
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">September 2025 – December 2025</p>
+            </div>
+            <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+              <li>
+                Built an AI leasing platform for affordable housing applications, consisting of Azure OpenAI vision agents, Supabase PostgreSQL backend &amp; React/Next.js frontend, reducing manual validation time by 90% for pilot users.
+              </li>
+              <li>
+                Designed AI document verification pipelines leveraging GPT-4 Vision and optimized full-stack architecture (PostgreSQL schemas, Box API, TypeScript dashboards) to automate ID/income workflows and improve pilot usability.
               </li>
             </ul>
           </div>
@@ -73,17 +97,17 @@ export default function Resume() {
               <p className="font-semibold text-gray-900 dark:text-white">
                 GTM Software Engineer Intern · InstaLily AI
               </p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">May 2025 – Aug 2025</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">May 2025 – August 2025</p>
             </div>
             <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
               <li>
-                Built a complete AI-assisted sales platform from zero to one, integrating 20 LLM tools for 15 pilot users, cutting new-feature onboarding by 30%.
+                Built and shipped a multi-agent AI sales platform from zero to one (Python MCP Server + Google ADK Agent + React/Next.js), integrating 20 LLM tools; deployed to 15 pilot users and reduced onboarding time 30%.
               </li>
               <li>
-                Designed PostgreSQL schemas and optimized SQL for LLM-driven LangChain queries, boosting throughput by 25%.
+                Designed PostgreSQL schemas &amp; optimized SQL for LLM-driven (LangChain) queries, boosting throughput by 25%.
               </li>
               <li>
-                Containerized and deployed full platform on Docker → GitHub Actions → GCP Cloud Run, achieving &gt;99.9% uptime with multi-tenant authentication.
+                Containerized &amp; deployed full platform on Docker → GitHub Actions → GCP Cloud Run. Architected a Firestore-based credential flow + CI/CD pipeline, achieved &gt; 99.9% uptime, and secured multi-tenant authentication.
               </li>
             </ul>
           </div>
@@ -91,16 +115,63 @@ export default function Resume() {
           <div>
             <div className="flex justify-between items-baseline flex-wrap gap-x-4">
               <p className="font-semibold text-gray-900 dark:text-white">
-                Research Assistant · Columbia University Irving Medical Center (Shen Lab)
+                Co-Founder &amp; Technical Lead · Apply for China
               </p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">May 2024 – Aug 2024</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">February 2021 – September 2021</p>
             </div>
             <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
               <li>
-                Developed and fine-tuned ML models using TensorFlow and PyTorch to identify key genetic mutations.
+                Co-founded an ed-tech platform connecting international students with Chinese universities; owned product vision and roadmap from idea to launch, scaling to 200+ active users across 15 countries.
               </li>
               <li>
-                Built robust data analytics pipelines analyzing large-scale genetic datasets (ClinVar, PrimateAI), boosting predictive accuracy by 20%.
+                Led a 4-person engineering team to ship a full-stack product on AWS from scratch, boosting engagement by 30%.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section className="mb-8">
+          <h3 className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-700 dark:text-gray-300 border-b border-gray-300 dark:border-gray-700 pb-1 mb-4">
+            Projects
+          </h3>
+
+          <div className="mb-5">
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4">
+              <p className="font-semibold text-gray-900 dark:text-white">
+                Repro-Bot AI · Yale Hackathon YHacks 2024
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">New Haven, CT</p>
+            </div>
+            <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+              <li>
+                Won the ActualFood Challenge for developing a health AI chatbot that bridges the communication gap in healthcare.
+              </li>
+              <li>
+                Gathered and analyzed user feedback to iterate on key features, resulting in a more user-friendly and scalable platform.
+              </li>
+              <li>
+                Developed frontend using React.js, ensuring data privacy and system robustness through secure HIPAA API integrations.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-baseline flex-wrap gap-x-4">
+              <p className="font-semibold text-gray-900 dark:text-white">
+                VERSA · UCLA Hackathon LA Hacks 2024
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">Los Angeles, CA</p>
+            </div>
+            <ul className="list-disc pl-5 mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
+              <li>
+                Developed a cloud-enabled AI application leveraging Python and Linux-based environments to assess research paper quality, incorporating comprehensive metrics beyond traditional citation counts.
+              </li>
+              <li>
+                Led product development by coordinating feature prioritization and roadmap planning to meet tight hackathon deadlines.
+              </li>
+              <li>
+                Achieved top 5 placement among 100+ projects, recognized for innovation in academic research evaluation.
               </li>
             </ul>
           </div>
@@ -109,20 +180,24 @@ export default function Resume() {
         {/* Skills */}
         <section>
           <h3 className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-700 dark:text-gray-300 border-b border-gray-300 dark:border-gray-700 pb-1 mb-3">
-            Skills
+            Technical Skills &amp; Interests
           </h3>
           <dl className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
             <div className="flex flex-wrap gap-x-2">
-              <dt className="font-semibold text-gray-900 dark:text-white">Languages:</dt>
-              <dd>Python, TypeScript, JavaScript, Java, C/C++, Ruby, SQL.</dd>
+              <dt className="font-semibold text-gray-900 dark:text-white">Spoken Languages:</dt>
+              <dd>German (native), Chinese (native), English (native), Spanish (basic).</dd>
             </div>
             <div className="flex flex-wrap gap-x-2">
-              <dt className="font-semibold text-gray-900 dark:text-white">Frameworks:</dt>
-              <dd>React, Next.js, Node.js, Ruby on Rails, TensorFlow, PyTorch, LangChain, PostgreSQL.</dd>
+              <dt className="font-semibold text-gray-900 dark:text-white">Programming Languages:</dt>
+              <dd>Java, Python, C/C++, JavaScript/TypeScript, HTML/CSS, SQL, Ruby.</dd>
             </div>
             <div className="flex flex-wrap gap-x-2">
-              <dt className="font-semibold text-gray-900 dark:text-white">DevOps:</dt>
-              <dd>Docker, GitHub Actions, GCP, Vercel, Linux.</dd>
+              <dt className="font-semibold text-gray-900 dark:text-white">Technologies:</dt>
+              <dd>React/Next.js, Flask, TensorFlow, PyTorch, LangChain, Docker, GitHub Actions, AWS, Linux, PostgreSQL.</dd>
+            </div>
+            <div className="flex flex-wrap gap-x-2">
+              <dt className="font-semibold text-gray-900 dark:text-white">Interests:</dt>
+              <dd>Backpacking, Scuba Diving, Tennis, Golf, Skiing, Piano, Reading, Photography, Building Products, Cooking.</dd>
             </div>
           </dl>
         </section>
