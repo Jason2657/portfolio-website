@@ -9,6 +9,20 @@ export type Project = {
   
   export const projects: Project[] = [
     {
+      title: "Inside Joke",
+      description: "A humor-first dating app that matches people through what they find funny — not what they look like. Built to test whether shared humor predicts compatibility better than traditional swipe mechanics.",
+      image: "/projects/inside-joke.png",
+      tags: ["Next.js", "TypeScript", "Consumer AI"],
+      link: "#"
+    },
+    {
+      title: "Oink: AI Speech Coach",
+      description: "A web-based speech training app that uses real-time speech-to-text to help users eliminate filler words, improve clarity, and build vocal presence. Inspired by exercises from professional speech coaching.",
+      image: "/projects/oink.png",
+      tags: ["Next.js 15", "Deepgram", "Vercel", "TypeScript"],
+      link: "#"
+    },
+    {
       title: "QuantumGuard: Quantum Readiness Analyzer",
       description: "A modern platform that helps you prepare for the post-quantum world: scan files, analyze URLs, and learn how quantum computing impacts security.",
       image: "/projects/quantumguard.png",
