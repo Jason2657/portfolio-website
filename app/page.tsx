@@ -34,10 +34,10 @@ export default function Home() {
           </h1>
           <div className="mt-2 md:mt-4 space-y-3">
             <p className="text-base md:text-xl text-gray-600 dark:text-gray-300">
-              I'm a Computer Science and Psychology major at Columbia University. I love solving complex problems and building products that combine technical depth with deep user understanding.
+              I'm a CS + Psychology senior at Columbia. I love solving complex problems and building AI products from zero to one.
             </p>
             <p className="text-base md:text-xl text-gray-600 dark:text-gray-300">
-              Previously, I've worked as a Software Engineer at Arlo, a GTM Engineer at Instalily, and conducted research in Computational Biology.
+              Trilingual (EN · DE · 中文), most curious about consumer AI and multi-agent systems, and at my best when I get to combine technical depth with deep user understanding.
             </p>
           </div>
 
