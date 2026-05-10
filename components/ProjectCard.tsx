@@ -11,7 +11,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <a
       href={project.link}
       target="_blank"
-      className="group block rounded-xl overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 dark:border-gray-700 dark:hover:border-gray-600 dark:hover:shadow-blue-500/20"
+      className="group block rounded-xl overflow-hidden border border-gray-200 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 dark:border-gray-700 dark:hover:border-gray-600"
     >
       {/* Project Image */}
       <div className="h-48 bg-gray-100 relative overflow-hidden dark:bg-gray-800">
@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             src={project.image}
             alt={project.title}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            className="object-cover group-hover:scale-103 transition-transform duration-500"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-gray-400">
