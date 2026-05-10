@@ -35,12 +35,34 @@ export default function About() {
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Experience</h2>
 
         <div className="mt-6 space-y-8">
+          {/* Onki AI */}
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">AI Engineer Intern @ Onki AI</h3>
+            <p className="text-gray-500 dark:text-gray-400 text-sm italic mt-1">January 2026 - Present</p>
+            <p className="text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+              Building an AI-powered in-store sales assistant that combines voice, computer vision, and touchscreen interfaces to deliver real-time product recommendations in retail, deployed to 3 pilot locations across high-margin categories. Designed evaluation frameworks across 500+ test conversations and iterated on LLM architecture, prompt strategies, and edge-deployment pipelines to improve recommendation accuracy by 35%.
+            </p>
+            <div className="mt-3">
+              <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-2">Stack:</p>
+              <div className="flex flex-wrap gap-2">
+                {["LLMs", "Computer Vision", "Voice", "Eval Frameworks", "Edge Deployment"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs dark:bg-gray-800 dark:text-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Arlo */}
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer Intern @ Arlo (Columbia Build Labs)</h3>
             <p className="text-gray-500 dark:text-gray-400 text-sm italic mt-1">September 2025 - December 2025</p>
             <p className="text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
-              Building Arlo, an AI leasing platform for affordable housing applications. Designed document verification pipelines using GPT-4 Vision, Supabase PostgreSQL, and React/Next.js that reduced manual validation time by 90% for pilot users.
+              Built Arlo, an AI leasing platform for affordable housing applications. Designed document verification pipelines using GPT-4 Vision, Supabase PostgreSQL, and React/Next.js that reduced manual validation time by 90% for pilot users.
             </p>
             <div className="mt-3">
               <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-2">Stack:</p>
